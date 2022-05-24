@@ -4,76 +4,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/styles/styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+    <link href="/css/styles.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9e4a4d87e1.js" crossorigin="anonymous"></script>
     <title>Caredlav</title>
 </head>
 <body>
     <header>
-        <i class="fas fa-bars"></i>  
-        <ul>
-            <li>Home</li>
-            <li>About me</li>
-            <li>Works</li>
-            <li>Contact</li>
+        <div class="burger-menu-container">
+            <i class="fas fa-bars"></i>  
+        </div>        
+        <ul class="nav-bar">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About me</a></li>
+            <li><a href="/works">Works</a></li>
+            <li><a href="/contact">Contact</a></li>
         </ul>
     </header>
-    <main>
-        <h1>
-            <span>H</span>
-            <span>i</span>
-            <span>e</span>
-            <span>v</span>
-            <span>e</span>
-            <span>r</span>
-            <span>y</span>
-            <span>o</span>
-            <span>n</span>
-            <span>e</span>
-            <span>,</span>
+    <main class="main-home">
+        <h1 aria-label="Hi everyone, I'm Carlos, Full Stack Developer">
+            <span aria-hidden="true">H</span>
+            <span aria-hidden="true">i</span>
+            <span aria-hidden="true">.</span>
+            <span aria-hidden="true">e</span>
+            <span aria-hidden="true">v</span>
+            <span aria-hidden="true">e</span>
+            <span aria-hidden="true">r</span>
+            <span aria-hidden="true">y</span>
+            <span aria-hidden="true">o</span>
+            <span aria-hidden="true">n</span>
+            <span aria-hidden="true">e</span>
+            <span aria-hidden="true">,</span>
             <br>
-            <span>I</span>
-            <span>'</span>
-            <span>m</span>
-            <span>C</span>
-            <span>a</span>
-            <span>r</span>
-            <span>l</span>
-            <span>o</span>
-            <span>s</span>
-            <span>,</span>
+            <span aria-hidden="true">I</span>
+            <span aria-hidden="true">'</span>
+            <span aria-hidden="true">m</span>
+            <span aria-hidden="true">.</span>
+            <span aria-hidden="true">C</span>
+            <span aria-hidden="true">a</span>
+            <span aria-hidden="true">r</span>
+            <span aria-hidden="true">l</span>
+            <span aria-hidden="true">o</span>
+            <span aria-hidden="true">s</span>
+            <span aria-hidden="true">,</span>
             <br>
-            <span>F</span>
-            <span>u</span>
-            <span>l</span>
-            <span>l</span>
-            <span></span>
-            <span>S</span>            
-            <span>t</span>
-            <span>a</span>
-            <span>c</span>
-            <span>k</span>
-            <span>D</span>
-            <span>e</span>
-            <span>v</span>
-            <span>e</span>
-            <span>l</span>
-            <span>o</span>
-            <span>p</span>
-            <span>e</span>
-            <span>r</span>
+            <span aria-hidden="true">F</span>
+            <span aria-hidden="true">u</span>
+            <span aria-hidden="true">l</span>
+            <span aria-hidden="true">l</span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true">S</span>            
+            <span aria-hidden="true">t</span>
+            <span aria-hidden="true">a</span>
+            <span aria-hidden="true">c</span>
+            <span aria-hidden="true">k</span>
+            <span aria-hidden="true">D</span>
+            <span aria-hidden="true">e</span>
+            <span aria-hidden="true">v</span>
+            <span aria-hidden="true">e</span>
+            <span aria-hidden="true">l</span>
+            <span aria-hidden="true">o</span>
+            <span aria-hidden="true">p</span>
+            <span aria-hidden="true">e</span>
+            <span aria-hidden="true">r</span>
         </h1>
+        <p>Frontend Developer / Backend Developer</p>
         <p>You're all welcome to check my portfolio to see my last works, to know a little about me and
             how to reach me.
-            <br>
-            And yeah...I'm crazy about Anime!!!
         </p>
+        <h3>Program languages, frameworks, libraries and other tools I know:</h3>
+        <div class="img-container">
+            <img src="/img/js.png" alt="js">
+        <img src="/img/api.png" alt="api">
+        <img src="/img/css.png" alt="css">
+        <img src="/img/docker.png" alt="docker">
+        <img src="/img/ejs.png" alt="ejs">
+        <img src="/img/git.png" alt="git">
+        <img src="/img/html.png" alt="html">
+        <img src="/img/mysql.png" alt="mysql">
+        <img src="/img/nodejs.png" alt="nodejs">
+        <img src="/img/postman.jpg" alt="postman">
+        <img src="/img/react.jpg" alt="react">
+        <img src="/img/sequelize.png" alt="sequelize">
+        <img src="/img/vs.png" alt="vs">
+        <img src="/img/workbench.png" alt="workbench">
+        </div>        
     </main>
     <footer>
-        <ul>
-            <li>GitHub</li>
-            <li>LinkedIn</li>            
+        <ul class="nav-bar-footer">
+            <li><a href="https://github.com/caredlav"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>            
         </ul>
         <h6>Designed and built by Carlos Lavado</h6>
     </footer>
