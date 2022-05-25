@@ -80,10 +80,43 @@ header{
     height: 10vh;
 }
 
+/*About*/
+
+.main-about h2{
+    margin: 1rem;
+}
+
+.main-about p{
+    margin: 1em;
+    text-align: justify;
+    font-size: 25px;
+}
+
+.main-about label{
+    margin: 1rem;
+    font-size: 2em;
+    display: block;
+}
+
+.main-about .hobbies-img-container{
+    text-align: center;
+}
+
+.main-about .hobbies-img-container img{
+    width: 93vw;
+    height: 50vh;
+    border-radius: 2em;
+    box-shadow: 0px 0px 22px 2px #e7e6e6;
+}
+
+.main-about .hobbies-img-container .img-desktop{
+    display: none;
+}
+
 /*Footer*/
 
 footer{
-    margin-top: 3em;
+    margin: 1em;
 }
 
 .nav-bar-footer{
@@ -109,6 +142,8 @@ footer h6{
     font-size: 1rem;
 }
 
+/*Tablet view*/
+
 @media screen and (min-width: 768px) {
 
     /*Home*/
@@ -121,11 +156,23 @@ footer h6{
         text-align: center;
         font-size: 2rem;
     }
+
+    /*About*/
+
+    .main-about p{
+        font-size: 30px;
+    }
+
+    .main-about .hobbies-img-container img{
+        height: 60vh;
+    }
     
     footer{
     margin-top: 0;
     }
 }
+
+/*Desktop view*/
 
 @media screen and (min-width: 1024px) {
 
@@ -175,6 +222,31 @@ footer h6{
     .main-home .img-container img{
         width: 6vw;
         height: 20vh;
+    }
+
+    /*About*/
+
+    .main-about h2{
+        font-size: 2em;
+    }
+
+    .main-about p{
+        font-size: 35px;
+    }
+
+    .main-about label{
+        text-align: center;
+        font-size: 3em;
+    }
+
+    .main-about .hobbies-img-container .img-desktop{
+        display: unset;
+        width: 70vw;
+        height: 80vh;
+    }
+
+    .main-about .hobbies-img-container .img-mobile{
+        display: none;
     }
 
     /*Footer*/
