@@ -113,6 +113,64 @@ header{
     display: none;
 }
 
+/*Works*/
+
+.main-works{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-works h2{
+    text-align: center;
+    margin: 2rem;
+}
+
+.main-works .works-section{
+    margin: 1em;
+}
+
+.main-works .works-section .articles-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.main-works .works-section .articles-container .article-container{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.main-works .works-section .articles-container .article-container .article-work{
+    border: 1px solid white;
+    border-radius: 1em;
+    background-color: darkgray;
+}
+
+.main-works .works-section .articles-container .article-container .article-work label{
+    display: block;
+    text-align: center;
+    margin: 1rem;
+    font-size: 20px;
+}
+
+.main-works .works-section .articles-container .article-container .article-work .img-works-conatiner{
+    text-align: center;
+    margin: 1rem;
+}
+
+.main-works .works-section .articles-container .article-container .article-work .img-works-conatiner img{
+    width: 80vw;
+    border-radius: 70px;
+}
+
+.main-works .works-section .articles-container .article-container .article-work p{
+    text-align: justify;
+    margin: 2em;
+}
+
 /*Footer*/
 
 footer{
@@ -167,6 +225,22 @@ footer h6{
         height: 60vh;
     }
     
+    /*Works*/
+
+    .main-works h2{
+        font-size: 2em;
+    }
+
+    .main-works .works-section .articles-container .article-container{
+        width: 45%;
+    }
+
+    .main-works .works-section .articles-container .article-container .article-work .img-works-conatiner img{
+        width: 39vw;
+        height: 45vh;
+    } 
+
+    /*Footer*/
     footer{
     margin-top: 0;
     }
@@ -248,6 +322,31 @@ footer h6{
     .main-about .hobbies-img-container .img-mobile{
         display: none;
     }
+
+    /*Works*/
+
+    .main-works h2{
+        font-size: 3em;
+    }
+
+    .main-works .works-section .articles-container .article-container{
+        width: 30%;
+    }
+
+    .main-works .works-section .articles-container .article-container .article-work:hover{
+        box-shadow: 0px 0px 10px 0px rgb(252, 241, 241);
+    }
+
+    .main-works .works-section .articles-container .article-container .article-work label{
+        font-size: 30px;
+    }
+
+    .main-works .works-section .articles-container .article-container .article-work .img-works-conatiner img{
+        width: 26vw;
+        height: 50vh;
+        max-width: 27vw;
+        max-height: 70vh;
+    } 
 
     /*Footer*/
 
