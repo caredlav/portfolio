@@ -12,6 +12,7 @@ body{
 
 header{
     background-color: #cfd1d5ba;
+    padding: 1rem;
 }
 
 .burger-menu-container{
@@ -144,7 +145,7 @@ header{
 }
 
 .main-works .works-section .articles-container .article-container .article-work{
-    border: 1px solid white;
+    border: 1px solid #424040;
     border-radius: 1em;
     background-color: darkgray;
 }
@@ -171,10 +172,40 @@ header{
     margin: 2em;
 }
 
+/*Contact*/
+
+.main-contact h2{
+    text-align: center;
+    font-size: 2em;
+    margin: 1rem;
+}
+
+.main-contact p{
+    text-align: justify;
+    margin: 12px;
+    font-size: 21px;
+}
+
+.main-contact label{
+    font-size: 24px;
+    margin: 1rem;
+    padding: 2rem;
+    display: block;
+    border: 1px solid #fff8dca8;
+    border-radius: 50%;
+    background-color: cadetblue;
+    text-align: center;
+}
+
+.main-contact label a{
+    color: black;
+}
+
 /*Footer*/
 
 footer{
-    margin: 1em;
+    padding: 1em;
+    background: #1a1a1ae0;
 }
 
 .nav-bar-footer{
@@ -196,8 +227,8 @@ footer{
 
 footer h6{
     text-align: center;
-    margin: 1em;
     font-size: 1rem;
+    margin-top: 1em;
 }
 
 /*Tablet view*/
@@ -240,7 +271,20 @@ footer h6{
         height: 45vh;
     } 
 
+    /*Contact*/
+
+    .main-contact p{
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .main-contact label{
+        margin: 2rem;
+        padding: 3rem;
+    }
+
     /*Footer*/
+
     footer{
     margin-top: 0;
     }
@@ -347,6 +391,27 @@ footer h6{
         max-width: 27vw;
         max-height: 70vh;
     } 
+
+    /*Contact*/
+
+    .main-contact h2{
+        font-size: 3rem;
+    }
+
+    .main-contact p{
+        font-size: 30px;
+    }
+
+    .main-contact label{
+        padding: 4rem;
+        font-size: 2em;
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+
+    .main-contact label:hover{
+        box-shadow: 0px 0px 20px 5px darkgray;
+    }
 
     /*Footer*/
 
