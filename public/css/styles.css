@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=EB+Garamond:ital@1&family=PT+Sans+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Blaka&family=Bungee+Shade&family=Dancing+Script:wght@700&family=EB+Garamond:ital@1&family=Lobster&family=Luckiest+Guy&family=Nuosu+SIL&family=PT+Sans+Narrow&family=Permanent+Marker&family=Press+Start+2P&family=Shadows+Into+Light&family=Tiro+Devanagari+Marathi&family=Tiro+Devanagari+Sanskrit:ital@1&display=swap');
 
 *{
     margin: 0;
@@ -13,11 +13,12 @@ body{
 /*Header*/
 
 header{
+    height: 38vh;
     background-color: #cfd1d5ba;
     padding: 1rem;
     position: sticky;
     top: 0px;
-    z-index: 1;        
+    z-index: 2;        
 }
 
 .burger-menu-container{
@@ -35,7 +36,6 @@ header{
 
 .nav-bar{
     text-align: center;
-    margin: 1em;
 }
 
 .nav-bar li{
@@ -46,6 +46,7 @@ header{
 .nav-bar li a{
     color: black;
     font-size: 2rem;
+    font-family: 'Permanent Marker', cursive;
 }
 
 .menu-click{
@@ -82,6 +83,7 @@ header{
     color: black;
     text-decoration: none;
     font-size: 30px;
+    font-family: 'Luckiest Guy', cursive;
 }
 
 @keyframes display {
@@ -135,19 +137,36 @@ header{
 
 .main-about h2{
     margin: 1rem;
+    font-family: 'Nuosu SIL', serif;
 }
 
 .main-about p{
     margin: 1em;
     text-align: justify;
     font-size: 25px;
+    font-family: 'EB Garamond', serif;
 }
 
 .main-about label{
     margin: 1rem;
     font-size: 2em;
     display: block;
-    animation: move 3s;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: .7s ease-in-out all;
+}
+
+.main-about label.visible{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.main-about #label1{
+    font-family: 'Press Start 2P', cursive;
+}
+
+.main-about #label2{
+    font-family: 'Bungee Shade', cursive;
 }
 
 .main-about .hobbies-img-container{
@@ -159,40 +178,25 @@ header{
     height: 50vh;
     border-radius: 2em;
     box-shadow: 0px 0px 22px 2px #e7e6e6;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: .7s ease-in-out all;
 }
 
-.main-about .hobbies-img-container .img-mobile{
-    animation: move 3s;
-}
-
-@keyframes move {
-    0%{
-        transform: translateX(-300px);
-        opacity: 0.1;
-        transition: 500ms;
-    }
-    100%{
-        transform: translateX(0);
-        opacity: 1;
-        transition: 500ms;
-    }
+.main-about .hobbies-img-container .img-mobile.visible{
+    opacity: 1;
+    transform: translateX(0);
 }
 
 #second-p{
-    animation: move2 4s;
+    opacity: 0.1;
+    transform: translateX(20px);
+    transition: 1s;
 }
 
-@keyframes move2 {
-    0%{
-        transform: translateX(300px);
-        opacity: 0.1;
-        transition: 500ms;
-    }
-    100%{
-        transform: translateX(0);
-        opacity: 1;
-        transition: 500ms;
-    }
+#second-p.visible{
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .main-about .hobbies-img-container .img-desktop{
@@ -211,6 +215,7 @@ header{
 .main-works h2{
     text-align: center;
     margin: 1rem;
+    font-family: 'Tiro Devanagari Sanskrit', serif;
 }
 
 .main-works .works-section{
@@ -240,6 +245,7 @@ header{
     text-align: center;
     margin: 1rem;
     font-size: 20px;
+    font-family: 'Lobster', cursive;
 }
 
 .main-works .works-section .articles-container .article-container .article-work .img-works-container{
@@ -259,6 +265,8 @@ header{
 .main-works .works-section .articles-container .article-container .article-work p{
     text-align: justify;
     margin: 2em;
+    font-family: 'Dancing Script', cursive;
+    font-size: 18px;
 }
 
 .main-works .works-section .articles-container .article-container .article-work .info-work-container-mobile{
@@ -282,6 +290,7 @@ header{
 .main-contact h2{
     text-align: center;
     font-size: 2em;
+    font-family: 'Tiro Devanagari Sanskrit', serif;
     margin: 1rem;
 }
 
@@ -289,6 +298,7 @@ header{
     text-align: justify;
     margin: 12px;
     font-size: 21px;
+    font-family: 'Tiro Devanagari Marathi', serif;
 }
 
 .main-contact label{
@@ -300,6 +310,7 @@ header{
     border-radius: 50%;
     background-color: cadetblue;
     text-align: center;
+    font-family: 'Blaka', cursive;
 }
 
 .main-contact label a{
@@ -338,6 +349,7 @@ footer h6{
     text-align: center;
     font-size: 1rem;
     margin-top: 1em;
+    font-family: 'Shadows Into Light', cursive;
 }
 
 /*Tablet view*/
@@ -397,6 +409,10 @@ footer h6{
         width: 45%;
     }
 
+    .main-works .works-section .articles-container .article-container .article-work p{
+      font-size: 22px;  
+    }
+
     .main-works .works-section .articles-container .article-container .article-work .img-works-container img{
         width: 39vw;
         height: 45vh;
@@ -426,6 +442,10 @@ footer h6{
 @media screen and (min-width: 1024px) {
 
     /*Header*/    
+
+    header{
+        height: auto;
+    }
 
     #menu ul li a{
         position: relative;
@@ -632,24 +652,15 @@ footer h6{
         display: unset;
         width: 70vw;
         height: 80vh;
-        animation: move 3s;
+    }
+
+    .main-about .hobbies-img-container .img-desktop.visible{
+        opacity: 1;
+        transform: translateX(0);
     }
 
     .main-about .hobbies-img-container .img-mobile{
         display: none;
-    }
-
-    @keyframes move {
-        0%{
-            transform: translateX(-300px);
-            opacity: 0.1;
-            transition: 500ms;
-        }
-        100%{
-            transform: translateX(0);
-            opacity: 1;
-            transition: 500ms;
-        }
     }
 
     /*Works*/
@@ -676,6 +687,8 @@ footer h6{
         box-shadow: 0px 0px 10px 0px rgb(252, 241, 241);
         transform: scale(1.1);
         transition: 1s;
+        position: relative;
+        z-index: 1;
     }
 
     .main-works .works-section .articles-container .article-container .article-work label{
