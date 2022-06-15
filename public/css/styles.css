@@ -1,9 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Blaka&family=Bungee+Shade&family=Dancing+Script:wght@700&family=EB+Garamond:ital@1&family=Lobster&family=Luckiest+Guy&family=Nuosu+SIL&family=PT+Sans+Narrow&family=Permanent+Marker&family=Press+Start+2P&family=Shadows+Into+Light&family=Tiro+Devanagari+Marathi&family=Tiro+Devanagari+Sanskrit:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Blaka&family=Bungee+Shade&family=Dancing+Script:wght@700&family=EB+Garamond:ital@1&family=Kaushan+Script&family=Lobster&family=Luckiest+Guy&family=Nuosu+SIL&family=PT+Sans+Narrow&family=Permanent+Marker&family=Press+Start+2P&family=Shadows+Into+Light&family=Tiro+Devanagari+Marathi&family=Tiro+Devanagari+Sanskrit:ital@1&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html{
+    font-size: unset !important;
+    line-height: unset !important;
 }
 
 body{
@@ -13,7 +18,7 @@ body{
 /*Header*/
 
 header{
-    height: 38vh;
+    height: 42vh;
     background-color: #cfd1d5ba;
     padding: 1rem;
     position: sticky;
@@ -47,21 +52,34 @@ header{
     color: black;
     font-size: 2rem;
     font-family: 'Permanent Marker', cursive;
+    text-decoration: underline;
 }
 
 .menu-click{
-    border-bottom-left-radius: 3em;
-    border-bottom-right-radius: 17em;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 11rem;
     background-color: #cf860d;
     height: 45vh;
     width: 90vw;
-    position: absolute;
+    position: fixed;
     top: 0px;
     animation: display;
-    animation-duration: 1.7s;
+    animation-duration: 0.5s;
 }
 
-.menu-click i{
+.menu-click-out{
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 11rem;
+    background-color: #cf860d;
+    height: 45vh;
+    width: 90vw;
+    position: fixed;
+    top: -300px;
+    animation: out;
+    animation-duration: 0.5s;
+}
+
+.fa-circle-xmark{
     font-size: 30px;
     position: relative;
     left: 84%;
@@ -69,17 +87,18 @@ header{
     color:#46423cde;
 }
 
-.menu-click ul{
+.burger-menu-nav-bar{
     padding: 1rem;
+    padding-left: 2rem !important;
     margin-left: 2em;
 }
 
-.menu-click ul li{
+.burger-menu-nav-bar li{
     margin: 5px;
     list-style: hiragana !important;
 }
 
-.menu-click ul li a{
+.burger-menu-nav-bar li a{
     color: black;
     text-decoration: none;
     font-size: 30px;
@@ -87,13 +106,23 @@ header{
 }
 
 @keyframes display {
-    0%{
-        transform: translateY(0px);
+    0%{        
+        top: -300px;
         transition: all 0s;
     }
     100%{
-        transform: translateY(-4px);
-        transition: all 3s;
+        transition: all 2s;
+    }
+}
+
+@keyframes out {
+    0%{
+        top: 0px;
+        transition: all 2s;
+    }
+    100%{
+        top: -300px;
+        transition: all 2s;
     }
 }
 
@@ -101,12 +130,13 @@ header{
 
 .main-home h1{
     margin: 1rem;
-    font-size: 2.1rem;
+    font-size: 1.9rem;
 }
 
 .main-home h1 span{
     display: inline-block;
     margin-right: -7px;
+    font-family: 'Kaushan Script', cursive;
 }
 
 .main-home .sub-prof{
@@ -359,17 +389,25 @@ footer h6{
     /*Header*/
 
     .menu-click{
-        border-bottom-left-radius: 26em;
-        border-bottom-right-radius: 26em;
-        height: 41vh;
-        width: 77vw;
+        border-bottom-left-radius: 26rem;
+        border-bottom-right-radius: 26rem;
+        height: 44vh;
+        width: 83vw;
     }
 
-    .menu-click ul{
+    .menu-click-out{
+        border-bottom-left-radius: 26rem;
+        border-bottom-right-radius: 26rem;
+        background-color: #cf860d;
+        height: 44vh;
+        width: 83vw;
+    }
+
+    .burger-menu-nav-bar{
         margin-left: 14em;
     }
 
-    .menu-click ul li a{
+    .burger-menu-nav-bar li a{
         font-size: 34px;
     }
 
@@ -377,7 +415,7 @@ footer h6{
 
     .main-home h1{
         text-align: center;
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     .main-home .sub-prof{
@@ -551,25 +589,39 @@ footer h6{
         width: 97vw;
         z-index: 1;
     }
+
+    .menu-click-out{
+        height: 21vh;
+        width: 97vw;
+        z-index: 1;
+    }
     
+    .menu-click i{
+        transition: 0.5s;
+    }
+
     .menu-click i:hover{
         color: #fff7eade;
         transition: 1s;
     }
 
-    .menu-click ul{
+    .burger-menu-nav-bar{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         margin-left: 0;
     }
 
-    .menu-click ul li:hover{
+    .burger-menu-nav-bar li:hover{
         color: aliceblue;
         transition: 300ms;
     }
 
-    .menu-click ul li a:hover{
+    .burger-menu-nav-bar li a{
+        transition: 500ms;
+    }
+
+    .burger-menu-nav-bar li a:hover{
         color: rgb(153, 197, 218);
         transition: 500ms;
     }
@@ -599,12 +651,12 @@ footer h6{
     }
     
     .nav-bar li a:hover{
-        border: 1px solid whitesmoke;
+        border: 1px solid rgb(99, 95, 95);
         border-radius: 1rem;
         padding: 1rem;
         text-decoration: none;
-        color: steelblue;
-        background-color: peru;
+        color: rgb(165, 104, 24);
+        background-color: rgb(209, 174, 78);
         transition: 1s;        
     }
 
@@ -728,6 +780,7 @@ footer h6{
     .main-works .works-section .articles-container .article-container .article-work .img-works-container .icon-container a{
         font-size: 50px;
         color: rgb(24, 14, 14);
+        transition: 800ms;
     }
 
     .main-works .works-section .articles-container .article-container .article-work .img-works-container:hover .icon-container{
@@ -771,15 +824,10 @@ footer h6{
     }
 
     .main-contact p{
-        font-size: 30px;
-        position: relative;
-        right: 2%;
+        font-size: 30px;        
     }
 
     .main-contact p span{
-        position: absolute;
-        top: 0px;
-        right: 11%;
         transition: 1s;
     }
 
@@ -798,22 +846,32 @@ footer h6{
         animation: showingContact 5s;
     }
 
+    .main-contact .contact-email:hover{
+        color: #930e0e;
+        transition: 300ms;
+    }
+
     .main-contact .contact-linkedin{
         animation: showingContact 10s;
     }
 
-    .main-contact p span:hover{
-        box-shadow: 0px 0px 5px 0px rgb(238, 224, 224);
-        background-color: rgb(199, 78, 30);
-        border-radius: 1rem;
-        padding: 10px;
-        top: -14px;
-        right: 9%;
-        transition: 1s;
+    .main-contact .contact-linkedin:hover{
+        color: #240f76;
+        transition: 300ms;
+    }
+
+    .main-contact .contact-linkedin a:hover{
+        color: #240f76;
+        transition: 300ms;
+    }
+
+    .main-contact p span a{
+        transition: 400ms;
     }
 
     .main-contact p span a:hover{
-        color: teal;
+        color: rgb(148, 98, 98);
+        transition: 500ms;
     }    
     
     @keyframes showingContact {
@@ -831,6 +889,10 @@ footer h6{
     .nav-bar-footer{
         display: flex;
         justify-content: center;
+    }
+
+    .nav-bar-footer li a{
+        transition: 500ms;
     }
 
     .nav-bar-footer li a:hover{
