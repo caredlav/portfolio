@@ -12,7 +12,7 @@ html{
 }
 
 body{
-    background-color: #1820b9;
+    background-color: #000454;
 }
 
 /*Header*/
@@ -49,7 +49,7 @@ header{
 }
 
 .nav-bar li a{
-    color: black;
+    color: #db3503;
     font-size: 2rem;
     font-family: 'Permanent Marker', cursive;
     text-decoration: underline;
@@ -131,6 +131,7 @@ header{
 .main-home h1{
     margin: 1rem;
     font-size: 1.9rem;
+    color: #ababab;
 }
 
 .main-home h1 span{
@@ -142,6 +143,7 @@ header{
 .main-home .sub-prof{
     font-size: 1.3rem;
     font-family: 'Bebas Neue', cursive;
+    color: #ababab;
 }
 
 .main-home p{
@@ -149,18 +151,22 @@ header{
     font-size: 2.5rem;
     text-align: center;
     font-family: 'EB Garamond', serif;
+    color: #6fb9a0;
 }
 
 .main-home h3{
     text-align: center;
     font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 2rem;
+    margin: 1rem;
+    color: #ffa216;
 }
 
 .main-home .container-carousel{
     margin: 1rem;
-    border: 1px solid #a59f9f;
+    border: 1px solid #a59f9f45;
     border-radius: 1rem;
-    background-color: #ddae57;
+    background-color: #7ca34fdb;
 }
 
 /*About*/
@@ -168,6 +174,7 @@ header{
 .main-about h2{
     margin: 1rem;
     font-family: 'Nuosu SIL', serif;
+    color: #bd5c37;
 }
 
 .main-about p{
@@ -175,12 +182,14 @@ header{
     text-align: justify;
     font-size: 25px;
     font-family: 'EB Garamond', serif;
+    color: #e5f3ff;
 }
 
 .main-about label{
     margin: 1rem;
-    font-size: 2em;
+    font-size: 1.8rem;
     display: block;
+    text-align: center;
     opacity: 0;
     transform: translateX(-100px);
     transition: .7s ease-in-out all;
@@ -193,10 +202,12 @@ header{
 
 .main-about #label1{
     font-family: 'Press Start 2P', cursive;
+    color: #00c4ff;
 }
 
 .main-about #label2{
     font-family: 'Bungee Shade', cursive;
+    color: #dfeb2f;
 }
 
 .main-about .hobbies-img-container{
@@ -219,7 +230,7 @@ header{
 }
 
 #second-p{
-    opacity: 0.1;
+    opacity: 0.0;
     transform: translateX(20px);
     transition: 1s;
 }
@@ -246,6 +257,7 @@ header{
     text-align: center;
     margin: 1rem;
     font-family: 'Tiro Devanagari Sanskrit', serif;
+    color: #25a51d;
 }
 
 .main-works .works-section{
@@ -322,13 +334,15 @@ header{
     font-size: 2em;
     font-family: 'Tiro Devanagari Sanskrit', serif;
     margin: 1rem;
+    color: #bba615;
 }
 
 .main-contact p{
     text-align: justify;
     margin: 12px;
-    font-size: 21px;
+    font-size: 20px;
     font-family: 'Tiro Devanagari Marathi', serif;
+    color: #cee8ff;
 }
 
 .main-contact label{
@@ -348,14 +362,14 @@ header{
 }
 
 .main-contact p a{
-    color: black;
+    color: #cee8ff;
 }
 
 /*Footer*/
 
 footer{
     padding: 1em;
-    background: #1a1a1ae0;
+    background: #0c0a0a;
 }
 
 .nav-bar-footer{
@@ -368,7 +382,7 @@ footer{
 }
 
 .nav-bar-footer li a{
-    color: black;
+    color: #817777;
 }
 
 .nav-bar-footer li .fa-brands{
@@ -380,6 +394,7 @@ footer h6{
     font-size: 1rem;
     margin-top: 1em;
     font-family: 'Shadows Into Light', cursive;
+    color: #f1865f;
 }
 
 /*Tablet view*/
@@ -431,6 +446,14 @@ footer h6{
 
     .main-about p{
         font-size: 30px;
+    }
+
+    .main-about h3{
+        font-size: 3rem;
+    }
+
+    .main-about label{
+        font-size: 3rem;
     }
 
     .main-about .hobbies-img-container img{
@@ -696,8 +719,7 @@ footer h6{
     }
 
     .main-about label{
-        text-align: center;
-        font-size: 3em;
+        font-size: 4rem;
     }
 
     .main-about .hobbies-img-container .img-desktop{
@@ -774,7 +796,7 @@ footer h6{
         position: absolute;
         top: 389px;
         left: 74px;
-        transition: all 1s;
+        transition: all 0.4s;
     }
 
     .main-works .works-section .articles-container .article-container .article-work .img-works-container .icon-container a{
@@ -790,14 +812,14 @@ footer h6{
     }
 
     .main-works .works-section .articles-container .article-container .article-work .img-works-container .icon-container a:hover{
-        color: rgb(151, 142, 142);
+        color: rgb(255, 187, 98);
         transition: 1s;
     }
 
     .main-works .works-section .articles-container .article-container .article-work .background-hover{
         width: 100px;
         height: 100px;
-        background: rgba(255, 0, 0, 0.11);
+        background: rgba(26, 25, 25, 0.61);
         position: absolute;
         top: 350px;
         left: -35px;
