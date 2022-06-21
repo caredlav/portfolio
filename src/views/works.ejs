@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs') %> 
+<body>
+    <%- include('./partials/header.ejs') %> 
+    <main class="main-works">
+        <h2>Here you can see all my works as a Full Stack Developer</h2>
+        <section class="works-section">
+            <div class="articles-container">
+                <% works.forEach(work => { %>
+                    <div class="article-container">
+                        <article class="article-work">
+                    <label><%= work.name %> </label>
+                    <div class="img-works-container">
+                        <img class="img-works" src="/img/<%= work.img %>" alt="<%= work.alt %>">
+                        <div class="icon-container">
+                            <% if (work.heroku!=="") { %>
+                           <a href="<%= work.gitHub %>"><i class="fa-brands fa-github"></i></a>                                                        
+                            <a href="<%= work.heroku %>"><i class="fa-solid fa-pager"></i></a>
+                           <% }else{ %>
+                            <a href="<%= work.gitHub %>"><i class="fa-brands fa-github"></i></a>  
+                            <% } %> 
+                        </div>                    
+                        <div class="background-hover"></div>
+                    </div>
+                    <p><%= work.description %></p>
+                    <div class="info-work-container-mobile">
+                        <label>Check the code in Github or see how was deployed:</label>
+                        <% if (work.heroku!=="") { %>
+                            <a href="<%= work.gitHub %>"><i class="fa-brands fa-github"></i></a> 
+                            <a href="<%= work.heroku %>"><i class="fa-solid fa-pager"></i></a> 
+                        <% }else{ %>
+                            <a href="<%= work.gitHub %>"><i class="fa-brands fa-github"></i></a> 
+                        <% } %> 
+                    </div>
+                </article>
+                    </div>
+                <% }) %>               
+            </div>            
+        </section>
+    </main>
+    <%- include('./partials/footer.ejs') %> 
+    <script src="/js/menu.js"></script>
+</body>
+</html>

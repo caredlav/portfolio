@@ -685,6 +685,10 @@ footer h6{
 
     /*Home*/
 
+    .main-home{
+        overflow-x: hidden;
+    }
+
     .main-home h1{
         font-size: 4.4rem;
     }

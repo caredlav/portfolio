@@ -1,17 +1,21 @@
 const path =require("path");
+const carouselImagesModel=require('../models/carouselImages');
+const projectsModel=require('../models/projects');
 
 const homeController={
     getHome: (req,res)=>{
-        res.sendFile(path.resolve(__dirname,"../views/home.html"));
+        const listOfImgs=carouselImagesModel.findAll();
+        res.render('home',{images: listOfImgs});
     },
-    getWorks: (req,res)=>{
-        res.sendFile(path.resolve(__dirname,"../views/works.html"));
+    getWorks: (req,res)=>{   
+        const listOfProjects=projectsModel.findAll();
+        res.render('works',{title: "Works", works: listOfProjects});
     },
     getAbout: (req,res)=>{
-        res.sendFile(path.resolve(__dirname,"../views/about.html"));
+        res.render('about',{title: "About Me"});
     },
     getContact: (req,res)=>{
-        res.sendFile(path.resolve(__dirname,"../views/contact.html"));
+        res.render('contact',{title: "Contact Information"});
     }
 }
 

@@ -1,0 +1,58 @@
+[
+    {
+        "name": "js.png",
+        "alt": "JavaScript"
+    },
+    {
+        "name": "api.png",
+        "alt": "API"
+    },
+    {
+        "name": "css.png",
+        "alt": "CSS"
+    },
+    {
+        "name": "docker.png",
+        "alt": "Docker"
+    },
+    {
+        "name": "ejs.png",
+        "alt": "EJS"
+    },
+    {
+        "name": "git.png",
+        "alt": "GIT"
+    },
+    {
+        "name": "html.png",
+        "alt": "HTML"
+    },
+    {
+        "name": "mysql.png",
+        "alt": "MySQL"
+    },
+    {
+        "name": "nodejs.png",
+        "alt": "NodeJS"
+    },
+    {
+        "name": "postman.jpg",
+        "alt": "Postman"
+    },
+    {
+        "name": "react.jpg",
+        "alt": "React"
+    },
+    {
+        "name": "sequelize.png",
+        "alt": "Sequelize"
+    },
+    {
+        "name": "vs.png",
+        "alt": "VisualS_tudio_Code"
+    },
+    {
+        "name": "workbench.png",
+        "alt": "MySQL_Workbench"
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Mercado Liebre",
+        "description": "This is a website similar to Mercado Libre in which you can only see a few products (home), the register form and the login form. Additionally, this was a Frontend project.",
+        "img": "ml.png",
+        "alt": "Mercado_Liebre",
+        "gitHub": "https://github.com/caredlav/MercadoLiebre",
+        "heroku": "https://mercadoliebrebycelo.herokuapp.com"
+    },
+    {
+        "name": "Karons Afro",
+        "description": "This was an e-commerce where women from Afrocolombian community could buy beauty products. In addition, this project was made with a group, which every member had to complete the user's histories during a period of time (sprints). This was a Full Stack project.",
+        "img": "karonsafro.jpg",
+        "alt": "Karons_Afro",
+        "gitHub": "https://github.com/KarenAmor/Grupo16_KaronsAfro",
+        "heroku": "https://grupo16-karonsafro.herokuapp.com"
+    },
+    {
+        "name": "Namaki's World",
+        "description": "This is a personal project similar to Karonsafro but instead of buying beauty products, you can get products related to Videogames, Anime and Superheroes. For the moment, this project hasn't been uploaded to a server, however I tend to do it in the future. Meanwhile, you can see a preview of the home. Oh, I almost forget...this is a Frontend and Backend project.",
+        "img": "nw.jpg",
+        "alt": "Namaki_s_World",
+        "gitHub": "https://github.com/caredlav/namaki-sWorld",
+        "heroku": ""
+    },
+    {
+        "name": "DasSplit",
+        "description": "Even though at first sight it looks so poor in the Frontend, this project was focused on the Backend. Here you can manage shared accounts just to register and followed up the dues you and other users, friends or families have made in a specific date. Long story short...a program similar to SplitWise but a lower scale.",
+        "img": "dassplit.jpg",
+        "alt": "Dassplit",
+        "gitHub": "https://github.com/caredlav/DasSplit",
+        "heroku": ""
+    },
+    {
+        "name": "Ohm Calculator",
+        "description": "This was a little project where you can use it for physics problems related to Ohm's laws. It was done mostly with the Backend, which was connected with a data base. Unfortunaly, this only works in a local server, so if you wanna check it out just see the instructions on Github.",
+        "img": "calculadoraohm.jpg",
+        "alt": "Ohm_Calculator",
+        "gitHub": "https://github.com/caredlav/calculadoraLeyOhm",
+        "heroku": ""
+    }
+]
