@@ -25,11 +25,12 @@
                     </div>
                     <p><%= work.description %></p>
                     <div class="info-work-container-mobile">
-                        <label>Check the code in Github or see how was deployed:</label>
                         <% if (work.heroku!=="") { %>
+                        <label>Check the code in Github or see how was deployed:</label>                        
                             <a href="<%= work.gitHub %>"><i class="fa-brands fa-github"></i></a> 
                             <a href="<%= work.heroku %>"><i class="fa-solid fa-pager"></i></a> 
                         <% }else{ %>
+                            <label>Check the code in Github:</label>
                             <a href="<%= work.gitHub %>"><i class="fa-brands fa-github"></i></a> 
                         <% } %> 
                     </div>

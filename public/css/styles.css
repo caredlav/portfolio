@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Blaka&family=Bungee+Shade&family=Dancing+Script:wght@700&family=EB+Garamond:ital@1&family=Kaushan+Script&family=Lobster&family=Luckiest+Guy&family=Nuosu+SIL&family=PT+Sans+Narrow&family=Permanent+Marker&family=Press+Start+2P&family=Shadows+Into+Light&family=Tiro+Devanagari+Marathi&family=Tiro+Devanagari+Sanskrit:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Blaka&family=Bungee+Shade&family=Dancing+Script:wght@700&family=EB+Garamond:ital@1&family=Kaushan+Script&family=Lobster&family=Luckiest+Guy&family=Nuosu+SIL&family=PT+Sans+Narrow&family=Permanent+Marker&family=Press+Start+2P&family=Righteous&family=Shadows+Into+Light&family=Tiro+Devanagari+Marathi&family=Tiro+Devanagari+Sanskrit:ital@1&display=swap');
 
 *{
     margin: 0;
@@ -18,7 +18,7 @@ body{
 /*Header*/
 
 header{
-    height: 42vh;
+    height: 43vh;
     background-color: #cfd1d5ba;
     padding: 1rem;
     position: sticky;
@@ -397,6 +397,36 @@ footer h6{
     color: #f1865f;
 }
 
+/*Error*/
+
+.body-error{
+    background: #030304;
+}
+
+.body-error .img-container{
+    text-align: center;
+}
+
+.body-error .img-container img{
+    background-size: cover;
+    width: 100vw;
+    height: 50vh;
+}
+
+.body-error .hyperlink-container{
+    text-align: center;
+    margin: 1px;
+    padding: 2px;
+}
+
+.body-error a{
+    font-size: 28px;
+    color: #292962;
+    font-family: 'Righteous', cursive;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
 /*Tablet view*/
 
 @media screen and (min-width: 768px) {
@@ -495,6 +525,12 @@ footer h6{
 
     footer{
     margin-top: 0;
+    }
+
+    /*Error*/
+    .body-error .img-container img{
+        width: 60vw;
+        height: 80vh;
     }
 }
 
@@ -923,6 +959,21 @@ footer h6{
 
     .nav-bar-footer li a:hover{
         color: wheat;
+        transition: 1s;
+    }
+
+    /*Error*/
+    .body-error .hyperlink-container{
+        position: relative;
+        bottom: 75px;
+    }
+
+    .body-error a{
+        transition: 1s;
+    }
+
+    .body-error a:hover{
+        color: #1e1e4b;
         transition: 1s;
     }
 }
