@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Blaka&family=Bungee+Shade&family=Dancing+Script:wght@700&family=EB+Garamond:ital@1&family=Kaushan+Script&family=Lobster&family=Luckiest+Guy&family=Nuosu+SIL&family=PT+Sans+Narrow&family=Permanent+Marker&family=Press+Start+2P&family=Righteous&family=Shadows+Into+Light&family=Tiro+Devanagari+Marathi&family=Tiro+Devanagari+Sanskrit:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Blaka&family=Bungee+Shade&family=Dancing+Script:wght@700&family=EB+Garamond:ital@1&family=Kaushan+Script&family=League+Gothic&family=Lobster&family=Luckiest+Guy&family=Nuosu+SIL&family=PT+Sans+Narrow&family=Permanent+Marker&family=Press+Start+2P&family=Righteous&family=Shadows+Into+Light&family=Tiro+Devanagari+Marathi&family=Tiro+Devanagari+Sanskrit:ital@1&display=swap');
 
 *{
     margin: 0;
@@ -244,6 +244,67 @@ header{
     display: none;
 }
 
+.main-about h3{
+    margin: 10px;
+    font-family: 'League Gothic', sans-serif;
+    color: #297823;
+    font-size: 2rem;
+    text-align: justify;
+}
+
+.main-about .carousel .carousel-container{
+    position: relative;
+}
+
+.main-about .carousel .carousel-container .carousel-previous, .carousel-next{
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: calc(50% - 14px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    color: #c90e0e;
+    font-size: 35px;
+    z-index: 1;
+}
+
+.main-about .carousel .carousel-container .carousel-list{
+    overflow: hidden;
+}
+
+.main-about .carousel .carousel-container .carousel-list .carousel-element img{
+    width: 100vw;
+    height: 30vh;
+}
+
+.main-about .carousel .carousel-container .carousel-previous{
+    left: 2px;
+}
+
+.main-about .carousel .carousel-container .carousel-next{
+    right: 1px;
+}
+
+.main-about .carousel .carousel-indicators .glider-dot{
+    width: 25px;
+    height: 4px;
+    border-radius: 0;
+    opacity: .2;
+    background: #fff;
+}
+
+.main-about .carousel .carousel-indicators .glider-dot:hover{
+    opacity: .5;
+}
+
+.main-about .carousel .carousel-indicators .glider-dot.active{
+    opacity: 1;
+}
+
 /*Works*/
 
 .main-works{
@@ -480,6 +541,7 @@ footer h6{
 
     .main-about h3{
         font-size: 3rem;
+        margin: 20px;
     }
 
     .main-about label{
@@ -775,6 +837,18 @@ footer h6{
 
     .main-about .hobbies-img-container .img-mobile{
         display: none;
+    }
+
+    .main-about .carousel .carousel-container .carousel-previous, .carousel-next{
+        opacity: 50%;
+    }
+
+    .main-about .carousel .carousel-container .carousel-previous:hover, .carousel-next:hover{
+        opacity: 100%;
+    }
+
+    .main-about .carousel .carousel-container .carousel-list .carousel-element img{
+        width: 34vw;
     }
 
     /*Works*/

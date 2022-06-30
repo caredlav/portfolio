@@ -9,7 +9,7 @@
     },
     {
         "name": "Karons Afro",
-        "description": "This was an e-commerce where women from Afrocolombian community could buy beauty products. In addition, this project was made with a group, which every member had to complete the user's histories during a period of time (sprints). This was a Full Stack project.",
+        "description": "This was an e-commerce where women from Afrocolombian community could buy beauty products. In addition, this project was made with a group, which every member had to complete the user's histories during a period of time (sprints). This was a Full Stack project including a dashboard, which was created by using ReactJs.",
         "img": "karonsafro.jpg",
         "alt": "Karons_Afro",
         "gitHub": "https://github.com/KarenAmor/Grupo16_KaronsAfro",

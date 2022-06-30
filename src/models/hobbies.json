@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Naruto-Logo.jpg",
+        "alt": "naruto"
+    },
+    {
+        "name": "Dragonball-Logo.png",
+        "alt": "dragonball"
+    },
+    {
+        "name": "bleach-logo.png",
+        "alt": "bleach"
+    },
+    {
+        "name": "Pokemon-Logo.png",
+        "alt": "pokemon"
+    },
+    {
+        "name": "Yu-Gi-Oh-logo.jpg",
+        "alt": "yugioh"
+    },
+    {
+        "name": "Fairy-Tail-Logo.jpg",
+        "alt": "fairytail"
+    },
+    {
+        "name": "Gears-Of-War-Logo.jpg",
+        "alt": "gearsofwar"
+    },
+    {
+        "name": "heroes-of-the-storm-Logo.jpg",
+        "alt": "hots"
+    },
+    {
+        "name": "Mario-kart-logo.png",
+        "alt": "mariokart"
+    },
+    {
+        "name": "Overwatch-logo.jpg",
+        "alt": "overwatch"
+    },
+    {
+        "name": "god-of-war-logo.jpg",
+        "alt": "godofwar"
+    },
+    {
+        "name": "Super-Smash-Bros-logo.png",
+        "alt": "supersmashbros"
+    }
+]

@@ -32,9 +32,30 @@
             I'm so into these hoobies since I can remember... Knowing about videogames was one
             of the reasons I wanted to become a programmer, though.
         </p>
+        <h3>Some animes and videogames that I've enjoyed through years...</h3>
+        <div class="carousel">
+                            <div class="carousel-container">
+                                <button aria-label="previous" class="carousel-previous">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </button>
+                                <button aria-label="next" class="carousel-next">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+                                <div class="carousel-list">
+                                    <% hobbies.forEach(hobbie => { %>
+                                     <div class="carousel-element">
+                                        <img src="/img/<%= hobbie.name %>" alt="<%= hobbie.alt %>">
+                                    </div>
+                                    <% }) %>                                                                        
+                                </div>
+                            </div>
+                            <div role="tablist" class="carousel-indicators"></div>
+                        </div>
     </main>    
     <%- include('./partials/footer.ejs') %> 
     <script src="/js/menu.js"></script>
     <script src="/js/observer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+    <script src="/js/glider.js"></script>
 </body>
 </html>
