@@ -1,61 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- include('./partials/head.ejs') %> 
-<body>
-    <%- include('./partials/header.ejs') %> 
-    <main class="main-about">
-        <h2>Full name: Carlos Eduardo Lavado Olivero</h2>
-        <h2>Profession: Computer Engineer / Full Stack Web Developer</h2>
-        <p>Hi, as I said before, my name is Carlos Lavado. I'm from Venezuela but currently living
-            in Colombia. I studied Computer Engineering in college and then extended to the world of Full
-            Stack Development. The reason why I left my country was to get better opportunities for me and 
-            my family, due to the social-economic situation that has been trough in Venezuela. 
-            <br>
-            <br>
-            I always glad to meet new people, although at the beginning I can be a litle shy and quite but 
-            once I get to know a person, I become more outgoing and more friendly.
-            <br>
-            <br>
-            My hobbies are:
-        </p>
-            <label id="label1">Videogames</label>
-            <div class="hobbies-img-container">
-                <img id="img-mob-1" class="img-mobile" src="https://img.freepik.com/vector-gratis/conjunto-objetos-relacionados-videojuegos-neon-estilo-lineal_24908-58670.jpg" alt="videogames">
-                <img id="img-desk-1" class="img-desktop" src="https://c.tenor.com/c1nHZPnjNSgAAAAC/viciado-vicio.gif" alt="videojegos">
-            </div>            
-            <label id="label2">And Anime</label>
-            <div class="hobbies-img-container">
-                <img id="img-mob-2" class="img-mobile" src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/480/public/media/image/2021/08/naruto-naruto-uzumaki-2425679.jpg?itok=cSHefN5K" alt="anime">
-                <img id="img-desk-2" class="img-desktop" src="https://images.hive.blog/0x0/https://files.peakd.com/file/peakd-hive/alejandroaldana/23w2oHhw2qTYzbjC118AKiRntsVrqu2Xo2BowqX34EFjg3N8gtcER3fSRWaXLH8QG21Aa.gif" alt="anime">
-            </div>            
-        <p id="second-p">
-            I'm so into these hoobies since I can remember... Knowing about videogames was one
-            of the reasons I wanted to become a programmer, though.
-        </p>
-        <h3>Some animes and videogames that I've enjoyed through years...</h3>
-        <div class="carousel">
-                            <div class="carousel-container">
-                                <button aria-label="previous" class="carousel-previous">
-                                    <i class="fa-solid fa-chevron-left"></i>
-                                </button>
-                                <button aria-label="next" class="carousel-next">
-                                    <i class="fa-solid fa-chevron-right"></i>
-                                </button>
-                                <div class="carousel-list">
-                                    <% hobbies.forEach(hobbie => { %>
-                                     <div class="carousel-element">
-                                        <img src="/img/<%= hobbie.name %>" alt="<%= hobbie.alt %>">
-                                    </div>
-                                    <% }) %>                                                                        
+<%- include('./partials/head.ejs') %>
+
+    <body>
+        <%- include('./partials/header.ejs') %>
+            <main class="main-about">
+                <h2>Full name: Carlos Eduardo Lavado Olivero</h2>
+                <h2>Profession: Computer Engineer / Full Stack Web Developer</h2>
+                <p>Hi, as I said before, my name is Carlos Lavado. I'm from Venezuela but currently living
+                    in Colombia. I studied Computer Engineering in college and then extended to the world 
+                    of Full Stack Web Development. The reason why I left my country was to get better 
+                    opportunities for me and my family, due to the social-economic situation that has been 
+                    trough in Venezuela.
+                    <br>
+                    <br>
+                    I always glad to meet new people, although at the beginning I can be a little shy and 
+                    quite but once I get to know a person, I become more outgoing and more friendly.
+                    <br>
+                    <br>
+                    My hobbies are:
+                </p>
+                <label id="label1">Videogames</label>
+                <div class="hobbies-img-container">
+                    <img id="img-mob-1" class="img-mobile"
+                        src="https://img.freepik.com/vector-gratis/conjunto-objetos-relacionados-videojuegos-neon-estilo-lineal_24908-58670.jpg"
+                        alt="videogames">
+                    <img id="img-desk-1" class="img-desktop"
+                        src="https://c.tenor.com/c1nHZPnjNSgAAAAC/viciado-vicio.gif" alt="videojegos">
+                </div>
+                <label id="label2">And Anime</label>
+                <div class="hobbies-img-container">
+                    <img id="img-mob-2" class="img-mobile"
+                        src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/480/public/media/image/2021/08/naruto-naruto-uzumaki-2425679.jpg?itok=cSHefN5K"
+                        alt="anime">
+                    <img id="img-desk-2" class="img-desktop"
+                        src="https://images.hive.blog/0x0/https://files.peakd.com/file/peakd-hive/alejandroaldana/23w2oHhw2qTYzbjC118AKiRntsVrqu2Xo2BowqX34EFjg3N8gtcER3fSRWaXLH8QG21Aa.gif"
+                        alt="anime">
+                </div>
+                <p id="second-p">
+                    I'm so into these hoobies since I can remember... Knowing about videogames was one
+                    of the reasons I wanted to become a programmer, though.
+                </p>
+                <h3>Some animes and videogames that I've enjoyed through years...</h3>
+                <div class="carousel">
+                    <div class="carousel-container">
+                        <button aria-label="previous" class="carousel-previous">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button aria-label="next" class="carousel-next">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                        <div class="carousel-list">
+                            <% hobbies.forEach(hobbie=> { %>
+                                <div class="carousel-element">
+                                    <img src="/img/<%= hobbie.name %>" alt="<%= hobbie.alt %>">
                                 </div>
-                            </div>
-                            <div role="tablist" class="carousel-indicators"></div>
+                                <% }) %>
                         </div>
-    </main>    
-    <%- include('./partials/footer.ejs') %> 
-    <script src="/js/menu.js"></script>
-    <script src="/js/observer.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
-    <script src="/js/glider.js"></script>
-</body>
+                    </div>
+                    <div role="tablist" class="carousel-indicators"></div>
+                </div>
+            </main>
+            <%- include('./partials/footer.ejs') %>
+                <script src="/js/menu.js"></script>
+                <script src="/js/observer.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+                <script src="/js/glider.js"></script>
+    </body>
+
 </html>
