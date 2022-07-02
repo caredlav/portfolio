@@ -11,7 +11,7 @@ app.set("views", path.resolve(__dirname, "./views"));
 app.use(homeRouter);
 
 app.use((req, res, next) => {
-    res.status(404).render('error');
+    res.status(404).render('error', { title: "404 NOT FOUND" });
 });
 
 app.listen(port, () => console.log(`Sever status: ON on port ${port}`));

@@ -26,6 +26,17 @@ header {
     z-index: 2;
 }
 
+.logo-container {
+    position: absolute;
+    top: -6px;
+    left: 1px;    
+}
+
+.logo-container a img {
+    width: 26vw;
+    max-width: 30vw;
+}
+
 .burger-menu-container {
     text-align: center;
 }
@@ -140,6 +151,14 @@ header {
     display: inline-block;
     margin-right: -7px;
     font-family: 'Kaushan Script', cursive;
+}
+
+.main-home h1 #logo {
+    width: 32%;
+    height: 105px;
+    max-width: 32%;
+    max-height: 105px;
+    margin-right: -3rem;
 }
 
 .main-home .sub-prof {
@@ -497,6 +516,17 @@ footer h6 {
 
     /*Header*/
 
+    .logo-container {
+        left: 0;
+    }
+
+    .logo-container a img{
+        width: 20vw;
+        max-width: 30vw;
+        height: 22vh;
+        max-width: 25vh;
+    }
+
     .menu-click {
         border-bottom-left-radius: 26rem;
         border-bottom-right-radius: 26rem;
@@ -525,6 +555,14 @@ footer h6 {
     .main-home h1 {
         text-align: center;
         font-size: 3rem;
+    }
+
+    .main-home h1 #logo {
+        width: 20%;
+        height: 130px;
+        max-width: 20%;
+        max-height: 130px;
+        margin-right: -4rem;
     }
 
     .main-home .sub-prof {
@@ -607,6 +645,17 @@ footer h6 {
 
     header {
         height: auto;
+    }
+
+    .logo-container {
+        left: 1px;
+    }
+
+    .logo-container a img{
+        width: 10vw;
+        max-width: 10vw;
+        height: 17vh;
+        max-height: 17vh;
     }
 
     #menu ul li a {
@@ -797,6 +846,13 @@ footer h6 {
     .main-home h1 span:hover {
         color: white;
         transition: 1s;
+    }
+
+    .main-home h1 #logo{
+        width: 15%;
+        height: 150px;
+        max-width: 20%;
+        max-height: 150px;
     }
 
     .main-home .sub-prof {
