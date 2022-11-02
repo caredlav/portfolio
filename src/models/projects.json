@@ -5,7 +5,8 @@
         "img": "ml.png",
         "alt": "Mercado_Liebre",
         "gitHub": "https://github.com/caredlav/MercadoLiebre",
-        "heroku": "https://mercadoliebrebycelo.herokuapp.com"
+        "heroku": "https://mercadoliebrebycelo.herokuapp.com",
+        "stack": ["JavaScript", "HTML", "CSS", "Express"]
     },
     {
         "name": "Karons Afro",
@@ -13,7 +14,8 @@
         "img": "karonsafro.jpg",
         "alt": "Karons_Afro",
         "gitHub": "https://github.com/KarenAmor/Grupo16_KaronsAfro",
-        "heroku": "https://grupo16-karonsafro.herokuapp.com"
+        "heroku": "https://grupo16-karonsafro.herokuapp.com",
+        "stack": ["JavaScript", "HTML", "CSS", "Express", "Nodejs", "React", "MySQL", "TypeORM"]
     },
     {
         "name": "Namaki's World",
@@ -21,7 +23,8 @@
         "img": "nw.jpg",
         "alt": "Namaki_s_World",
         "gitHub": "https://github.com/caredlav/namaki-sWorld",
-        "heroku": ""
+        "heroku": "",
+        "stack": ["JavaScript", "HTML", "CSS", "Express", "Nodejs"]
     },
     {
         "name": "DasSplit",
@@ -29,7 +32,8 @@
         "img": "dassplit.jpg",
         "alt": "Dassplit",
         "gitHub": "https://github.com/caredlav/DasSplit",
-        "heroku": ""
+        "heroku": "",
+        "stack": ["JavaScript", "HTML", "CSS", "Express", "Nodejs"]
     },
     {
         "name": "Ohm Calculator",
@@ -37,6 +41,7 @@
         "img": "calculadoraohm.jpg",
         "alt": "Ohm_Calculator",
         "gitHub": "https://github.com/caredlav/calculadoraLeyOhm",
-        "heroku": ""
+        "heroku": "",
+        "stack": ["JavaScript", "HTML", "CSS", "Express", "Nodejs", "TypeORM", "MySQL"]
     }
 ]

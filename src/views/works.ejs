@@ -39,6 +39,11 @@
                                                 <a href="<%= work.gitHub %>"><i class="fa-brands fa-github"></i></a>
                                                 <% } %>
                                     </div>
+                                    <ul class="tools-list">
+                                        <% work.stack.forEach(item => { %>
+                                            <li><%= item %> </li>
+                                        <% }) %>
+                                    </ul>
                                 </article>
                             </div>
                             <% }) %>
