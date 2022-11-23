@@ -6,7 +6,7 @@
         "alt": "Mercado_Liebre",
         "gitHub": "https://github.com/caredlav/MercadoLiebre",
         "heroku": "https://mercadoliebrebycelo.herokuapp.com",
-        "stack": ["JavaScript", "HTML", "CSS", "Express"]
+        "stack": ["JavaScript", "HTML", "CSS", "Nodejs", "Express"]
     },
     {
         "name": "Karons Afro",
@@ -15,7 +15,7 @@
         "alt": "Karons_Afro",
         "gitHub": "https://github.com/KarenAmor/Grupo16_KaronsAfro",
         "heroku": "https://grupo16-karonsafro.herokuapp.com",
-        "stack": ["JavaScript", "HTML", "CSS", "Express", "Nodejs", "React", "MySQL", "TypeORM"]
+        "stack": ["JavaScript", "HTML", "CSS", "Express", "Nodejs", "React", "MySQL", "Sequelize", "EJS"]
     },
     {
         "name": "Namaki's World",
@@ -42,6 +42,6 @@
         "alt": "Ohm_Calculator",
         "gitHub": "https://github.com/caredlav/calculadoraLeyOhm",
         "heroku": "",
-        "stack": ["JavaScript", "HTML", "CSS", "Express", "Nodejs", "TypeORM", "MySQL"]
+        "stack": ["JavaScript", "HTML", "CSS", "Express", "Nodejs", "MySQL","Sequelize"]
     }
 ]
