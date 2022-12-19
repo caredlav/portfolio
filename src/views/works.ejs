@@ -17,9 +17,9 @@
                                     <div class="img-works-container">
                                         <img class="img-works" src="/img/projectsDone/<%= work.img %>" alt="<%= work.alt %>">
                                         <div class="icon-container">
-                                            <% if (work.heroku!=="" ) { %>
+                                            <% if (work.deploy!=="" ) { %>
                                                 <a href="<%= work.gitHub %>"><i class="fa-brands fa-github"></i></a>
-                                                <a href="<%= work.heroku %>"><i class="fa-solid fa-pager"></i></a>
+                                                <a href="<%= work.deploy %>"><i class="fa-solid fa-pager"></i></a>
                                                 <% }else{ %>
                                                     <a href="<%= work.gitHub %>"><i class="fa-brands fa-github"></i></a>
                                                     <% } %>
@@ -30,10 +30,10 @@
                                         <%= work.description %>
                                     </p>
                                     <div class="info-work-container-mobile">
-                                        <% if (work.heroku!=="" ) { %>
+                                        <% if (work.deploy!=="" ) { %>
                                             <label>Check the code in Github or see how was deployed:</label>
                                             <a href="<%= work.gitHub %>"><i class="fa-brands fa-github"></i></a>
-                                            <a href="<%= work.heroku %>"><i class="fa-solid fa-pager"></i></a>
+                                            <a href="<%= work.deploy %>"><i class="fa-solid fa-pager"></i></a>
                                             <% }else{ %>
                                                 <label>Check the code in Github:</label>
                                                 <a href="<%= work.gitHub %>"><i class="fa-brands fa-github"></i></a>
